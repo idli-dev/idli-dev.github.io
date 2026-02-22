@@ -1,8 +1,8 @@
+/* Reset & base styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   font-family:
     Roboto,
     system-ui,
@@ -14,17 +14,53 @@
 }
 
 body {
-  background: #080808;
+  background-color: #080808;
   color: #f0f0f0;
-}
-
-.simple-box {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  font-size: 2rem;
+/* Container for homepage content */
+.simple-box {
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
 
-  padding: 2rem;
-  margin: 2rem;
+/* Heading */
+.simple-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00ffff;
+}
+
+/* Project links */
+.simple-box ul {
+  list-style: none;
+}
+
+.simple-box li {
+  margin: 1rem 0;
+}
+
+.simple-box a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.simple-box a:hover {
+  background-color: #00ffff;
+  color: #080808;
 }
